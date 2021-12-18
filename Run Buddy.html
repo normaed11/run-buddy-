@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Buddy</title>
+    
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script><link rel="stylesheet" href="./Run Buddy_files/style.css"></head>
+<body><header>
+    <h1>
+        <a href="http://127.0.0.1:5500/">RUN BUDDY</a>
+
+    </h1>
+    <nav>
+        <!--Unordered list elements-->
+        <ul>
+            <!--list item element-->
+            <li>
+                <!--Anchor element-->
+                <a href="http://127.0.0.1:5500/index.html#what-we-do">What We Do</a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:5500/index.html#what-you-do">What you do</a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:5500/index.html#your-trainer">Your Trainer </a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:5500/index.html#reach-out">Reach Out</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!--Hero/jumbotron-->
+<section class="hero">
+    <div class="hero-form">
+        <h3>Get Started Today</h3>
+        <p>Fill out this form and one of our trainers will schedule a consult</p>
+        <form>
+            <label for="name">Enter full name:</label>
+            <input type="text" placeholder="Your Name" name="name" id="name">
+            <label for="email">Enter email address:</label>
+            <input type="email" placeholder="Email Address" name="email" id="email">
+            <label for="phone">Enter a telephone number:</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone">
+            <p>
+                Have you worked out with a trainer before?
+                <input type="radio" name="trainer-confirm" id="trainer-yes">
+                <label for="trainer-yes">Yes</label>
+                <input type="radio" name="trainer-confirm" id="trainer-no">
+                <label for="trainer-no">No</label>
+            </p>
+            <p>
+                <label for="checkbox">
+                    I acknowledge that I am at least 18 years of age.
+                </label>
+                <input type="checkbox" name="age-confirm" id="checkbox">
+            </p>
+            <button type="submit">
+                Get running!
+            </button>
+        </form>
+    </div>
+
+</section>
+
+<!--"what we do" section-->
+<section>
+    <h2>What We Do</h2>
+</section>
+
+<!--"what you do" section-->
+<section>
+    <h2>What You Do </h2>
+</section>
+<!--"Meet The Trainers" Section-->
+<section>
+    <h2>Meet The Trainers</h2>
+</section>
+
+<!--"reach out" section-->
+<section>
+    <h2>Reach Out</h2>
+</section>
+
+<!--footer-->
+<footer>
+    <h2>❤️Made with love by Run Buddy</h2>
+    <div>
+        <a href="http://127.0.0.1:5500/index.html#">Read Our Privacy Policy</a><br>
+        © 2019 Run Buddy, Inc.
+    </div>
+</footer></body></html>
